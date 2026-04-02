@@ -15,5 +15,5 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v4
     - name: PR check running
-      run: echo "PR check running for branch ${{ github.ref_name }}"   
+      run: echo "PR check running for branch ${{ github.head_ref }}"   
 
