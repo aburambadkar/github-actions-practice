@@ -1,15 +1,23 @@
+#This is the name of the workflow
 name: hello
 
+#Every push to the main branch will trigger this workflow
 on:
  push:
    branches: [main]
 
-
+#To check out the current repository at the commit that triggered the workflow and print hello message.
 jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
     - name: Checking repo
       uses: actions/checkout@v4
-    - name: Print message
-      run: echo "Hello from GitHub Actions!"  
+    - name: Print current date and time
+      run: date
+    - name: Print branch name
+      run: echo "The branch name is ${{ github.ref_name }}" 
+    - name: List files in Repo
+      run: ls -R
+    - name: Print runner's operating system
+      run: echo "The OS is: ${{ runner.os }}"
