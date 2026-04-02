@@ -1,0 +1,17 @@
+name: schedule-trigger
+
+on:
+ push:
+   branches: [main]
+ 
+ schedule:
+ - cron: '0 0 * * *' 
+
+jobs:
+  schedule:
+    runs_on: ubuntu-latest
+    steps:
+    - name: Run a health check
+      run: echo "Starting the automated daily system scan..."
+
+   
