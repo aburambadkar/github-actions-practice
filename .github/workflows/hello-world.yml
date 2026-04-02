@@ -20,4 +20,4 @@ jobs:
     - name: List files in Repo
       run: ls -R
     - name: Print runner's operating system
-      run: echo "The OS is: ${{ runner.os }}"
+      run: echo "The OS is ${{ runner.os }}"
