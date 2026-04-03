@@ -9,8 +9,13 @@ jobs:
   check-preinstalled-software:
     runs-on: ubuntu-latest
     steps:
-    - name: check versions
-      run: echo "${{ docker --version && python --version && git --version && node --version }}"
+    - name: check versions 
+      # This | allows you to provide multiple commands line by line
+      run: |
+        docker --version
+        python3 --version
+        git --version
+        node --version
 
 
 
