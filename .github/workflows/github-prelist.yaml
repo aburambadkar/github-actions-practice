@@ -1,0 +1,16 @@
+name: preinstalled-software
+
+on: 
+ push:
+   branches: [main]
+
+
+jobs:
+  check-preinstalled-software:
+  runs-on: ubuntu-latest
+  steps:
+  - name: check docker, python, git, nodeversion
+    run: echo "docker --version && python --version && git --version && nodejs --version"
+
+
+
