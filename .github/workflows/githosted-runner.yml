@@ -18,7 +18,7 @@ jobs:
         run: echo "${{ runner.os }}"
         
       - name: hostname
-        run: echo "$hostname"
+        run: hostname
       
       - name: Current user
-        run: echo "$whoami"
+        run: whoami
