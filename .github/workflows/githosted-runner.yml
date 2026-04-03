@@ -1,0 +1,24 @@
+name: hosted
+
+on:
+  push:
+    branches: [main]
+
+
+jobs:
+   validate:
+     runs-on: ${{ matrix.os }}
+     strategy:
+       fail-fast: false
+       matrix:
+         os: ["ubuntu-latest", "windows-latest", "macos-latest"]
+
+     steps:
+      - name: OS name
+        run: echo "${{ runner.os }}"
+        
+      - name: hostname
+        run: echo "$hostname"
+      
+      - name: Current user
+        run: echo "$whoami"
