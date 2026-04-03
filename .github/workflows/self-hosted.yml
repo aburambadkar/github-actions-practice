@@ -6,7 +6,7 @@ on:
 
 jobs:
   my-self-job:
-    runs-on: aws-self-hosted
+    runs-on: [aws-self-hosted, my-linux-runner]
     steps:
     - name: Print the hostname of the machine
       run: hostname
