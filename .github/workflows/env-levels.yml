@@ -21,8 +21,8 @@ jobs:
         echo "Environment: $ENVIRONMENT"
         echo "Version: $VERSION"
      
-     - name: Print GitHub Context
-       run: |
-          echo "Commit SHA: ${{ github.sha }}"
-          echo "Triggered by: ${{ github.actor }}"
+    - name: Print GitHub Context
+      run: |
+         echo "Commit SHA: ${{ github.sha }}"
+         echo "Triggered by: ${{ github.actor }}"
  
