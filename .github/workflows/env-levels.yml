@@ -23,6 +23,7 @@ jobs:
      
     - name: Print GitHub Context
       run: |
-         echo "Commit SHA: ${{ github.sha }}"
-         echo "Triggered by: ${{ github.actor }}"
+        echo "Commit SHA: ${{ github.sha }}"
+        echo "Triggered by: ${{ github.actor }}"
+        
  
