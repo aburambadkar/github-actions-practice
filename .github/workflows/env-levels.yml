@@ -7,7 +7,7 @@ env:
   APP_NAME: myapp
 
 jobs:
-  display_vars:
+  display-vars:
     runs-on: ubuntu-latest
     env:
       ENVIRONMENT: staging
