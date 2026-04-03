@@ -7,10 +7,10 @@ on:
 
 jobs:
   check-preinstalled-software:
-  runs-on: ubuntu-latest
-  steps:
-  - name: check versions
-    run: echo "${{ docker --version && python --version && git --version && nodejs --version }}"
+    runs-on: ubuntu-latest
+    steps:
+    - name: check versions
+      run: echo "${{ docker --version && python --version && git --version && nodejs --version }}"
 
 
 
